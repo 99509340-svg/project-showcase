@@ -1,5 +1,11 @@
 # 个人项目作品集网站
 
+## 公开地址
+
+- 作品集首页：https://99509340-svg.github.io/project-showcase/
+- 口袋理财项目页：https://99509340-svg.github.io/project-showcase/pocket-licai.html
+- 松拼 SongRide 项目页：https://99509340-svg.github.io/project-showcase/songpin.html
+
 用于寒假实习申请的双项目作品集。首页负责建立候选人背景与项目索引，两个独立项目页负责展示功能、截图、设计思路、技术栈、真实边界和体验入口。
 
 ## 页面
