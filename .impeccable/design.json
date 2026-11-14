@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "world": "project dossier",
+  "tokens": {
+    "color": {
+      "paper": "#edf0e9",
+      "paperDeep": "#e4e8df",
+      "ink": "#161713",
+      "muted": "#565a52",
+      "greenDeep": "#0f352b",
+      "mint": "#c9f2c7",
+      "red": "#b93b26",
+      "yellow": "#e8c93f"
+    },
+    "type": {
+      "display": "Portfolio Serif",
+      "body": "Portfolio Sans"
+    },
+    "radius": "14px"
+  },
+  "motion": {
+    "signature": "scroll reveal with drawn process line",
+    "reducedMotion": "disable all transitions and reveal offsets"
+  }
+}
