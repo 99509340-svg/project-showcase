@@ -1,25 +1,90 @@
 {
-  "schema": 1,
-  "world": "project dossier",
-  "tokens": {
-    "color": {
-      "paper": "#edf0e9",
-      "paperDeep": "#e4e8df",
-      "ink": "#161713",
-      "muted": "#565a52",
-      "greenDeep": "#0f352b",
-      "mint": "#c9f2c7",
-      "red": "#b93b26",
-      "yellow": "#e8c93f"
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-15T00:00:00+08:00",
+  "title": "Design System: Project Dossier — Midnight Campus HUD",
+  "extensions": {
+    "colorMeta": {
+      "midnight": { "role": "neutral", "displayName": "Midnight Base", "canonical": "#050814", "tonalRamp": ["#050814", "#080D1D", "#0C1224", "#111A31", "#17213B"] },
+      "electric-cyan": { "role": "primary", "displayName": "Electric Cyan", "canonical": "#68F5FF", "tonalRamp": ["#D8FDFF", "#A7FAFF", "#68F5FF", "#21BFCF", "#087381"] },
+      "signal-yellow": { "role": "secondary", "displayName": "Signal Yellow", "canonical": "#EDF64F", "tonalRamp": ["#FCFFD2", "#F8FF91", "#EDF64F", "#C7D125", "#7D8709"] },
+      "alert-red": { "role": "tertiary", "displayName": "Alert Red", "canonical": "#FF405D", "tonalRamp": ["#FFD7DE", "#FF93A3", "#FF405D", "#C9213B", "#741426"] },
+      "ink": { "role": "neutral", "displayName": "Screen Ink", "canonical": "#F4F7EF", "tonalRamp": ["#F4F7EF", "#D2D9E7", "#B4BED6", "#7F8AA2", "#4A5368"] }
     },
-    "type": {
-      "display": "Portfolio Serif",
-      "body": "Portfolio Sans"
+    "typographyMeta": {
+      "display": { "displayName": "Dossier Display", "purpose": "Hero and chapter headings with high-impact Chinese and English numbering." },
+      "body": { "displayName": "Evidence Body", "purpose": "Long-form project explanations, feature facts and boundary documentation." },
+      "hud": { "displayName": "Tactical HUD", "purpose": "Status labels, coordinates, code labels, navigation and system microcopy." }
     },
-    "radius": "14px"
+    "shadows": [
+      { "name": "screen-panel", "value": "0 28px 80px rgba(0,0,0,0.34)", "purpose": "Offset depth for large media windows and evidence panels." }
+    ],
+    "motion": [
+      { "name": "ease-out", "value": "cubic-bezier(0.16, 1, 0.3, 1)", "purpose": "Primary arrival and reveal easing." },
+      { "name": "ease-sharp", "value": "cubic-bezier(0.7, 0, 0.2, 1)", "purpose": "Diagonal intro panels and scanning sweeps." },
+      { "name": "reveal-stagger", "value": "70ms", "purpose": "Sibling delay for grouped evidence and module cards." }
+    ],
+    "breakpoints": [
+      { "name": "desktop", "value": "1120px" },
+      { "name": "tablet", "value": "820px" },
+      { "name": "mobile", "value": "430px" }
+    ]
   },
-  "motion": {
-    "signature": "scroll reveal with drawn process line",
-    "reducedMotion": "disable all transitions and reveal offsets"
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "High-priority experience or source link.",
+      "html": "<button class=\"ds-btn-primary\">在线体验 →</button>",
+      "css": ".ds-btn-primary { background:#68F5FF; color:#050814; border:1px solid #68F5FF; padding:0 22px; min-height:52px; font:800 14px/1 sans-serif; clip-path:polygon(0 0,calc(100% - 14px) 0,100% 14px,100% 100%,14px 100%,0 calc(100% - 14px)); transition:background .24s,color .24s,transform .24s; } .ds-btn-primary:hover { background:#050814; color:#68F5FF; transform:translateY(-2px); } .ds-btn-primary:focus-visible { outline:2px solid #F4F7EF; outline-offset:3px; }"
+    },
+    {
+      "name": "Outline Button",
+      "kind": "button",
+      "refersTo": "button-outline",
+      "description": "Secondary source or alternate navigation action.",
+      "html": "<button class=\"ds-btn-outline\">查看源码 ↗</button>",
+      "css": ".ds-btn-outline { background:transparent; color:#F4F7EF; border:1px solid rgba(218,229,255,.36); padding:0 22px; min-height:52px; font:800 14px/1 sans-serif; clip-path:polygon(0 0,calc(100% - 14px) 0,100% 14px,100% 100%,14px 100%,0 calc(100% - 14px)); transition:background .24s,color .24s,border-color .24s; } .ds-btn-outline:hover { background:#68F5FF; color:#050814; border-color:#68F5FF; } .ds-btn-outline:focus-visible { outline:2px solid #68F5FF; outline-offset:3px; }"
+    },
+    {
+      "name": "Project Evidence Panel",
+      "kind": "card",
+      "refersTo": "project-panel",
+      "description": "Full-width project dossier combining visual evidence, features and actions.",
+      "html": "<article class=\"ds-project\"><div class=\"ds-shot\"><span>CASE 01 / FINANCE</span></div><div class=\"ds-copy\"><small>WEB / PWA / MVP</small><h2>口袋理财<br><em>收益管家</em></h2><p>把收益计算、记账、资产、目标和 AA 结算连接成本地优先的数据闭环。</p><button class=\"ds-btn\">在线体验 ↗</button></div></article>",
+      "css": ".ds-project { display:grid; grid-template-columns:.95fr 1.05fr; background:#0C1224; color:#F4F7EF; border-block:1px solid rgba(218,229,255,.36); overflow:hidden; } .ds-shot { min-height:340px; display:grid; place-items:center; background:linear-gradient(145deg,#080D1D,#111A31); color:#68F5FF; font:800 13px/1 sans-serif; letter-spacing:.12em; border-right:1px solid rgba(218,229,255,.36); } .ds-copy { padding:48px; } .ds-copy small { color:#68F5FF; font:800 12px/1 sans-serif; letter-spacing:.14em; } .ds-copy h2 { margin:16px 0; font-size:46px; line-height:.98; } .ds-copy em { color:#68F5FF; font-style:normal; } .ds-copy p { color:#B4BED6; line-height:1.7; max-width:42ch; } .ds-btn { margin-top:24px; background:#68F5FF; color:#050814; border:0; padding:14px 18px; font-weight:800; }"
+    },
+    {
+      "name": "State Chip",
+      "kind": "chip",
+      "description": "A factual system state, never an invented metric.",
+      "html": "<span class=\"ds-chip\">● LIVE EXPERIENCE</span>",
+      "css": ".ds-chip { display:inline-flex; align-items:center; gap:7px; padding:6px 10px; border:1px solid #68F5FF; color:#68F5FF; background:#050814; font:800 12px/1 sans-serif; letter-spacing:.1em; }"
+    },
+    {
+      "name": "Boundary Report",
+      "kind": "card",
+      "description": "A visible container for factual limitations and unfinished scope.",
+      "html": "<aside class=\"ds-boundary\"><header>BOUNDARY REPORT <b>LIMITED / MVP</b></header><h2>真实边界，<br><em>不包装为生产产品。</em></h2><ul><li><b>数据存储</b><p>核心数据保存在当前浏览器 localStorage。</p></li></ul></aside>",
+      "css": ".ds-boundary { background:#111A31; color:#F4F7EF; border:1px solid #FF405D; clip-path:polygon(0 0,94% 0,100% 6%,100% 100%,6% 100%,0 94%); } .ds-boundary header { display:flex; justify-content:space-between; padding:13px 18px; border-bottom:1px solid rgba(218,229,255,.18); color:#B4BED6; font:800 12px/1 sans-serif; letter-spacing:.12em; } .ds-boundary header b { color:#FF405D; } .ds-boundary h2 { margin:0; padding:28px 24px 18px; font-size:34px; line-height:1.08; } .ds-boundary h2 em { color:#FF405D; font-style:normal; } .ds-boundary ul { margin:0; padding:0 24px 24px; } .ds-boundary li { list-style:none; padding:16px 0; border-top:1px solid rgba(218,229,255,.18); } .ds-boundary p { margin:5px 0 0; color:#B4BED6; font-size:13px; }"
+    },
+    {
+      "name": "HUD Navigation",
+      "kind": "nav",
+      "description": "Persistent system bar with portfolio identity and verified source entry.",
+      "html": "<nav class=\"ds-nav\"><a class=\"ds-brand\" href=\"#\"><b>PF</b><span>PROJECT DOSSIER</span></a><div><a href=\"#\">项目档案</a><a href=\"#\">工作方式</a><a class=\"ds-source\" href=\"#\">GITHUB ↗</a></div></nav>",
+      "css": ".ds-nav { display:flex; justify-content:space-between; align-items:center; min-height:72px; padding:0 24px; background:#050814; color:#F4F7EF; border-bottom:1px solid rgba(218,229,255,.18); font:700 13px/1 sans-serif; letter-spacing:.06em; } .ds-nav div { display:flex; gap:24px; } .ds-nav a { color:#D2D9E7; text-decoration:none; } .ds-source { color:#68F5FF !important; } .ds-brand { display:flex; align-items:center; gap:10px; color:#F4F7EF !important; } .ds-brand b { display:grid; place-items:center; width:36px; height:36px; background:#68F5FF; color:#050814; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "午夜校园作战档案",
+    "overview": "An original midnight campus dossier that combines tactical HUD structure with high-contrast editorial typography. Color, clips and motion organize project evidence; they never replace it.",
+    "keyCharacteristics": ["Midnight-blue base with selective electronic accents", "Cut-corner evidence panels", "Factual status language", "One authored diagonal reveal rather than continuous spectacle"],
+    "rules": [
+      { "name": "Signal Rarity Rule", "body": "Fluorescent colors designate state and interaction, not ambient decoration.", "section": "colors" },
+      { "name": "Screen-Not-Glass Rule", "body": "Use panels, borders, cropping and offset shadows; do not use decorative glassmorphism.", "section": "elevation" }
+    ],
+    "dos": ["Do keep the experience/source action visible in the first viewport.", "Do label demo data, reconstructed interfaces and pending experience codes.", "Do preserve keyboard focus and reduced-motion alternatives."],
+    "donts": ["Don't use Persona 3 characters, logos, fonts or screenshots.", "Don't invent users, revenue, retention, awards or operations.", "Don't add autoplay marquees, perpetual flicker or decorative colored glows."]
   }
 }

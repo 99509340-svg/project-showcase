@@ -3,143 +3,194 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#060915">
   <meta name="description" content="松拼 SongRide：面向松江大学城的校园拼车微信小程序 MVP，覆盖发布、浏览、报名、车主确认、收藏与个人管理。">
   <title>松拼 SongRide｜松江大学城拼车微信小程序 MVP</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="松拼 SongRide｜校园拼车微信小程序 MVP">
+  <meta property="og:description" content="面向松江大学城的校园拼车微信小程序 MVP，覆盖发布、浏览、报名、车主确认、收藏与个人管理。">
+  <meta property="og:url" content="https://99509340-svg.github.io/project-showcase/songpin.html">
+  <meta property="og:image" content="https://99509340-svg.github.io/project-showcase/assets/images/social/portfolio-og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="松拼 SongRide｜校园拼车微信小程序 MVP">
+  <meta name="twitter:description" content="面向松江大学城的校园拼车微信小程序 MVP，覆盖发布、浏览、报名、车主确认、收藏与个人管理。">
   <link rel="stylesheet" href="assets/css/site.css">
+  <script>document.documentElement.classList.add('js');</script>
 </head>
 <body class="project-page songpin-page">
-  <header class="site-header">
-    <div class="container site-nav">
-      <a class="wordmark" href="index.html">个人项目作品集 <span>02 / CAMPUS</span></a>
+  <div class="intro-curtain songpin-intro" aria-hidden="true">
+    <div class="intro-band intro-band-yellow"></div>
+    <div class="intro-band intro-band-red"></div>
+    <div class="intro-band intro-band-cyan"></div>
+    <div class="intro-core">
+      <span>CAMPUS CASE // 02</span>
+      <strong>SONG<br>RIDE</strong>
+      <small>ROLE-BASED · LOCAL MVP · WECHAT</small>
+    </div>
+    <div class="intro-scan"></div>
+  </div>
+
+  <header class="site-header" data-header>
+    <div class="nav-shell">
+      <a class="brand" href="index.html" aria-label="返回项目作品集首页">
+        <span class="brand-mark songpin-brand-mark">02</span>
+        <span class="brand-copy"><strong>SONGRIDE</strong><small>CAMPUS / WECHAT MINI PROGRAM</small></span>
+      </a>
       <nav class="nav-links" aria-label="主导航">
-        <a href="index.html">首页</a>
-        <a href="pocket-licai.html">口袋理财</a>
-        <a href="https://github.com/99509340-svg/songpin-miniprogram" target="_blank" rel="noreferrer">源码</a>
+        <a href="index.html">作品集首页</a>
+        <a href="#system">核心功能</a>
+        <a href="#boundary">真实边界</a>
+        <a class="nav-source" href="https://github.com/99509340-svg/songpin-miniprogram" target="_blank" rel="noreferrer">SOURCE <span aria-hidden="true">↗</span></a>
       </nav>
-      <div class="scroll-progress" aria-hidden="true"></div>
+      <div class="progress-track" aria-hidden="true"><span class="scroll-progress"></span></div>
     </div>
   </header>
 
   <main>
-    <section class="project-hero songpin-hero">
-      <div class="container project-hero-grid">
-        <div class="reveal">
-          <div class="brand-lockup">
-            <img class="songpin-logo" src="assets/images/brand/songpin-logo.png" alt="松拼 SongRide 标识">
-            <div>
-              <h1 style="font-size:clamp(44px,5vw,72px)">松拼<br>SongRide</h1>
-            </div>
+    <section class="case-hero songpin-hero">
+      <div class="section-shell case-hero-grid">
+        <div class="case-hero-copy">
+          <div class="case-id-row">
+            <span class="status-chip songpin-status"><i></i> MVP / CODE VERIFIED</span>
+            <span class="case-id">CASE / 02</span>
           </div>
-          <p class="lede">面向松江大学城的校园拼车微信小程序 MVP。围绕一次出行的完整状态，把找车、发布、报名、车主确认、联系方式复制和个人管理串成可操作的闭环。</p>
-          <div class="project-meta">
-            <span><b>项目角色</b> 独立开发者</span>
-            <span><b>时间</b> 2026.09—10</span>
-            <span><b>形态</b> 微信小程序</span>
-            <span><b>状态</b> 可预览 MVP</span>
+          <div class="songpin-title-lockup">
+            <img class="songpin-logo" src="assets/images/brand/songpin-logo.png" alt="松拼 SongRide 松饼品牌标识">
+            <h1 class="hero-title">
+              <span class="title-line"><span>同学顺路</span></span>
+              <span class="title-line title-accent"><span>拼车不再靠群聊</span><i aria-hidden="true">.</i></span>
+            </h1>
           </div>
-          <div class="actions project-actions">
-            <button class="btn" type="button" data-dialog-open="songpinExperience">微信扫码体验
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 9V5a1 1 0 0 1 1-1h4M16 4h3a1 1 0 0 1 1 1v4M20 16v3a1 1 0 0 1-1 1h-4M8 20H5a1 1 0 0 1-1-1v-3"/></svg>
-            </button>
-            <a class="btn btn-ghost" href="https://github.com/99509340-svg/songpin-miniprogram" target="_blank" rel="noreferrer">查看源码</a>
+          <p class="hero-lede">面向松江大学城的校园拼车微信小程序 MVP。围绕一次出行的完整状态，把找车、发布、报名、车主确认、联系方式复制和个人管理串成可操作的闭环。</p>
+          <dl class="case-meta">
+            <div><dt>项目角色</dt><dd>独立开发者</dd></div>
+            <div><dt>时间</dt><dd>2026.09—10</dd></div>
+            <div><dt>形态</dt><dd>微信小程序</dd></div>
+            <div><dt>状态</dt><dd><span class="meta-pending">体验码待更新</span></dd></div>
+          </dl>
+          <div class="actions case-hero-actions">
+            <button class="btn btn-primary magnet" type="button" data-dialog-open="songpinExperience"><span>查看体验说明</span> <span aria-hidden="true">↗</span></button>
+            <a class="btn btn-outline magnet" href="https://github.com/99509340-svg/songpin-miniprogram" target="_blank" rel="noreferrer">查看源码 <span aria-hidden="true">↗</span></a>
           </div>
         </div>
-        <div class="hero-media reveal">
-          <div class="route-board" aria-label="产品界面线路示意">
-            <div class="route-board-head"><span>CAMPUS ROUTE / MVP</span><strong>● OPEN</strong></div>
-            <div class="route-visual">
-              <div class="route-line">
-                <div class="route-track"></div>
-                <div class="route-stops">
-                  <div class="route-stop"><strong>松江大学城</strong><span>起点 · 校园出行</span></div>
-                  <div class="route-stop"><strong>虹桥 / 市区</strong><span>终点 · 同学间 AA 拼车</span></div>
-                </div>
-              </div>
-              <div class="route-mini-card">
-                <small>示例车单 / 界面示意</small>
-                <b>文汇路 → 虹桥火车站</b>
-                <div class="route-mini-meta"><span>明天 18:30</span><span>2 座</span><span>费用 AA</span></div>
-              </div>
-            </div>
-            <div class="route-stamp">SONGJIANG · UNIVERSITY TOWN</div>
+
+        <div class="route-console" data-parallax>
+          <div class="route-console-head">
+            <span>CAMPUS ROUTE / LIVE BOARD</span>
+            <strong><i></i> OPEN</strong>
           </div>
-          <div class="media-caption" style="color:#898d83"><span>根据真实页面结构制作的界面示意</span><span>VIEW / 01</span></div>
+          <div class="route-map" aria-label="校园拼车路线界面示意">
+            <div class="route-axis">
+              <span class="route-node route-node-a"><i></i><b>松江大学城</b><small>START / 校园出发</small></span>
+              <span class="route-node route-node-b"><i></i><b>虹桥 / 市区</b><small>END / 顺路同行</small></span>
+              <span class="route-pulse" aria-hidden="true"></span>
+            </div>
+            <div class="route-tag route-tag-a">31.03°N</div>
+            <div class="route-tag route-tag-b">121.22°E</div>
+            <div class="route-example">
+              <small>界面示意 / 示例车单</small>
+              <b>文汇路 → 虹桥火车站</b>
+              <div><span>明天 18:30</span><span>2 座</span><span>费用 AA</span></div>
+            </div>
+          </div>
+          <div class="route-console-foot">
+            <span>ROLE: DRIVER / PASSENGER</span>
+            <span>SONGJIANG · SHANGHAI</span>
+          </div>
+          <span class="route-corner route-corner-a" aria-hidden="true"></span>
+          <span class="route-corner route-corner-b" aria-hidden="true"></span>
         </div>
+      </div>
+      <div class="case-marquee songpin-marquee" aria-hidden="true">
+        <div class="marquee-track"><span>DISCOVER</span><i></i><span>PUBLISH</span><i></i><span>APPLY</span><i></i><span>CONFIRM</span><i></i><span>CONTACT</span><i></i><span>FAVORITE</span><i></i><span>MANAGE</span></div>
       </div>
     </section>
 
-    <section class="section">
-      <div class="container">
-        <div class="section-head reveal">
-          <h2>不止“发一条<br>拼车信息”。</h2>
+    <section class="content-section" id="system">
+      <div class="section-shell">
+        <div class="section-heading" data-reveal="mask">
+          <div class="section-code">SYSTEM MAP / 09 PAGES</div>
+          <h2>不止<br><span>“发一条拼车信息”。</span></h2>
           <p>项目注册了 9 个页面。核心不是信息列表，而是乘客与车主两种角色之间的状态流转：一条车单从开放、报名，到确认或拒绝，再到联系、收藏、上下架或取消。</p>
         </div>
-        <div class="feature-ledger reveal">
-          <div class="feature-row"><span>01</span><h3>出行广场</h3><p>支持目的地搜索、快捷路线、全部 / 找车 / 求拼筛选、收藏和下拉刷新，过期车单会自动失效。</p><small>浏览与筛选</small></div>
-          <div class="feature-row"><span>02</span><h3>发布车单</h3><p>可切换车主与乘客身份，填写起终点、日期时间、座位、费用和备注，并对关键字段做表单内校验。</p><small>双角色发布</small></div>
-          <div class="feature-row"><span>03</span><h3>报名与确认</h3><p>详情页支持报名、撤销、车主确认或拒绝、复制微信联系方式和收藏，状态反馈与权限区分明确。</p><small>核心状态流</small></div>
-          <div class="feature-row"><span>04</span><h3>个人管理</h3><p>“我的”页面聚合身份信息、我发布的、我报名的、我收藏的以及待处理提醒，并支持上下架和取消。</p><small>任务收口</small></div>
-          <div class="feature-row"><span>05</span><h3>产品周边</h3><p>设置、意见反馈、隐私政策、用户协议、新手教程、中英文切换、深浅主题与订阅提醒代码。</p><small>界面完整度</small></div>
+
+        <div class="module-grid songpin-modules" data-stagger>
+          <article class="module-card module-card-wide">
+            <span class="module-num">01</span>
+            <div><h3>出行广场</h3><p>支持目的地搜索、快捷路线、全部 / 找车 / 求拼筛选、收藏和下拉刷新，过期车单会自动失效。</p></div>
+            <small>DISCOVER / FILTER</small>
+          </article>
+          <article class="module-card">
+            <span class="module-num">02</span>
+            <div><h3>发布车单</h3><p>可切换车主与乘客身份，填写起终点、日期时间、座位、费用和备注，并对关键字段做表单内校验。</p></div>
+            <small>DUAL ROLE / FORM</small>
+          </article>
+          <article class="module-card">
+            <span class="module-num">03</span>
+            <div><h3>报名与确认</h3><p>详情页支持报名、撤销、车主确认或拒绝、复制微信联系方式和收藏，状态反馈与权限区分明确。</p></div>
+            <small>CORE STATE / PERMISSION</small>
+          </article>
+          <article class="module-card module-card-wide">
+            <span class="module-num">04</span>
+            <div><h3>个人管理</h3><p>“我的”页面聚合身份信息、我发布的、我报名的、我收藏的以及待处理提醒，并支持上下架和取消。</p></div>
+            <small>DASHBOARD / TASKS</small>
+          </article>
+          <article class="module-card module-card-wide module-card-accent">
+            <span class="module-num">05</span>
+            <div><h3>产品周边</h3><p>设置、意见反馈、隐私政策、用户协议、新手教程、中英文切换、深浅主题与订阅提醒代码。</p></div>
+            <small>SETTINGS / DOCS / THEME</small>
+          </article>
         </div>
       </div>
     </section>
 
-    <section class="section">
-      <div class="container">
-        <div class="section-head reveal">
-          <h2>一单车单，<br>五段清晰状态。</h2>
+    <section class="flow-section songpin-flow">
+      <div class="section-shell">
+        <div class="section-heading compact-heading" data-reveal="mask">
+          <div class="section-code">STATE FLOW / WHO ACTS NEXT</div>
+          <h2>一单车单，<br><span>五段清晰状态。</span></h2>
           <p>对校园场景来说，用户不只需要“看到信息”，还需要知道下一步由谁处理。页面和按钮围绕状态设计，避免发布者和报名者反复在微信群里确认。</p>
         </div>
-        <div class="flow reveal" aria-label="松拼核心流程">
-          <div class="flow-step"><h3>发现 / 发布</h3><p>浏览广场或创建车单</p></div>
-          <div class="flow-step"><h3>报名</h3><p>选择车单并提交申请</p></div>
-          <div class="flow-step"><h3>确认</h3><p>车主接受或拒绝申请</p></div>
-          <div class="flow-step"><h3>联系</h3><p>复制微信继续沟通</p></div>
-          <div class="flow-step"><h3>管理</h3><p>收藏、上下架或取消</p></div>
+        <div class="flow-track" data-sequence aria-label="松拼核心流程">
+          <span class="flow-line" aria-hidden="true"></span>
+          <div class="flow-step"><span class="flow-dot">01</span><h3>发现 / 发布</h3><p>浏览广场或创建车单</p></div>
+          <div class="flow-step"><span class="flow-dot">02</span><h3>报名</h3><p>选择车单并提交申请</p></div>
+          <div class="flow-step"><span class="flow-dot">03</span><h3>确认</h3><p>车主接受或拒绝申请</p></div>
+          <div class="flow-step"><span class="flow-dot">04</span><h3>联系</h3><p>复制微信继续沟通</p></div>
+          <div class="flow-step"><span class="flow-dot">05</span><h3>管理</h3><p>收藏、上下架或取消</p></div>
         </div>
       </div>
     </section>
 
-    <section class="section">
-      <div class="container">
-        <div class="section-head reveal">
-          <h2>三类页面，<br>一个连续体验。</h2>
+    <section class="phone-section">
+      <div class="section-shell">
+        <div class="section-heading" data-reveal="mask">
+          <div class="section-code">INTERFACE RECONSTRUCTION / NOT SCREENSHOTS</div>
+          <h2>三类页面，<br><span>一个连续体验。</span></h2>
           <p>下面的界面根据项目源码中的实际字段、按钮和状态重新绘制，用于作品集展示。它不是产品截图，也不会掩盖当前本地演示版的边界。</p>
         </div>
-        <div class="phone-wall reveal">
-          <div class="phone">
-            <div class="phone-screen">
+        <div class="phone-wall" data-stagger>
+          <div class="phone-shell">
+            <div class="phone-screen phone-screen-dark">
               <div class="phone-bar"><span>09:41</span><span>WECHAT MINI PROGRAM</span></div>
               <div class="phone-brand"><span class="phone-logo-dot"></span><span>松拼 SongRide</span></div>
-              <div style="margin-top:28px">
-                <div class="phone-title">出行广场</div>
-                <div class="phone-sub">发现同学间的顺路同行</div>
-              </div>
+              <div class="phone-title-block"><h3>出行广场</h3><p>发现同学间的顺路同行</p></div>
               <div class="phone-search">搜索目的地</div>
               <div class="segment"><b>全部</b><b>找车</b><b>求拼</b></div>
-              <div class="ride-card accent">
-                <div class="ride-route">文汇路 <i></i> 虹桥火车站</div>
-                <div class="ride-data"><span>出发<b>明天 18:30</b></span><span>座位<b>2 座</b></span><span>费用<b>AA</b></span></div>
-                <span class="ride-pill">车主发布 · 开放中</span>
-              </div>
-              <div class="ride-card">
-                <div class="ride-route">松江大学城 <i></i> 人民广场</div>
-                <div class="ride-data"><span>出发<b>周五 19:00</b></span><span>座位<b>3 座</b></span><span>费用<b>AA</b></span></div>
-                <span class="ride-pill">求拼 · 可报名</span>
-              </div>
+              <div class="ride-card accent"><div class="ride-route">文汇路 <i></i> 虹桥火车站</div><div class="ride-data"><span>出发<b>明天 18:30</b></span><span>座位<b>2 座</b></span><span>费用<b>AA</b></span></div><span class="ride-pill">车主发布 · 开放中</span></div>
+              <div class="ride-card"><div class="ride-route">松江大学城 <i></i> 人民广场</div><div class="ride-data"><span>出发<b>周五 19:00</b></span><span>座位<b>3 座</b></span><span>费用<b>AA</b></span></div><span class="ride-pill">求拼 · 可报名</span></div>
             </div>
-            <div class="phone-caption"><span>出行广场</span><span>界面示意</span></div>
+            <div class="phone-caption"><span>01 / 出行广场</span><span>界面示意</span></div>
           </div>
 
-          <div class="phone">
-            <div class="phone-screen light">
+          <div class="phone-shell">
+            <div class="phone-screen phone-screen-light">
               <div class="phone-bar"><span>09:41</span><span>WECHAT MINI PROGRAM</span></div>
               <div class="phone-brand"><span class="phone-logo-dot"></span><span>松拼 SongRide</span></div>
-              <div style="margin-top:28px">
-                <div class="phone-title">发布车单</div>
-                <div class="phone-sub">选择身份，补齐出发信息</div>
-              </div>
+              <div class="phone-title-block"><h3>发布车单</h3><p>选择身份，补齐出发信息</p></div>
               <div class="segment"><b>全部</b><b>找车</b><b>求拼</b></div>
               <div class="role-grid"><div class="role-box on">车主<br><small>我有车，可同行</small></div><div class="role-box">乘客<br><small>我想找顺路车</small></div></div>
               <div class="field"><span>出发地</span><b>文汇路</b></div>
@@ -148,59 +199,61 @@
               <div class="field"><span>座位 / 费用</span><b>2 座 · 费用 AA</b></div>
               <div class="phone-submit">发布拼车</div>
             </div>
-            <div class="phone-caption"><span>发布</span><span>界面示意</span></div>
+            <div class="phone-caption"><span>02 / 发布</span><span>界面示意</span></div>
           </div>
 
-          <div class="phone">
-            <div class="phone-screen">
+          <div class="phone-shell">
+            <div class="phone-screen phone-screen-dark">
               <div class="phone-bar"><span>09:41</span><span>WECHAT MINI PROGRAM</span></div>
               <div class="phone-brand"><span class="phone-logo-dot"></span><span>松拼 SongRide</span></div>
-              <div style="margin-top:28px">
-                <div class="phone-title">我的行程</div>
-                <div class="phone-sub">把发布、报名和收藏放在一起</div>
-              </div>
+              <div class="phone-title-block"><h3>我的行程</h3><p>把发布、报名和收藏放在一起</p></div>
               <div class="id-card"><div class="id-avatar">松</div><div><b>同学，你好</b><span>微信联系方式已保存</span></div></div>
               <div class="my-block"><h3>我发布的</h3><div class="my-item"><span><b>文汇路 → 虹桥</b><br>明天 18:30 · 2 座</span><span>开放中</span></div></div>
               <div class="my-block"><h3>我报名的</h3><div class="my-item"><span><b>大学城 → 人民广场</b><br>周五 19:00</span><span>待确认</span></div></div>
               <div class="my-block"><h3>待处理提醒</h3><div class="my-item"><span>有 1 位乘客等待确认</span><span>去处理</span></div></div>
             </div>
-            <div class="phone-caption"><span>我的</span><span>界面示意</span></div>
+            <div class="phone-caption"><span>03 / 我的</span><span>界面示意</span></div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section">
-      <div class="container split-proof">
-        <div class="proof-copy reveal">
-          <h2 style="font-size:clamp(36px,4.2vw,62px); line-height:1.08">为什么先做本地 MVP</h2>
-          <p style="margin-top:26px">校园拼车的关键并不只是“把帖子发出去”，而是让信息可筛选、报名有状态、发布者可处理申请、双方能继续联系。这个 MVP 先用本地数据层把整套交互闭环做完整，再验证页面与规则是否成立。</p>
+    <section class="ownership-section songpin-ownership">
+      <div class="section-shell ownership-grid">
+        <div class="ownership-copy" data-reveal="copy">
+          <div class="section-code">ROLE / WHY LOCAL FIRST</div>
+          <h2>先把流程<br><span>做成闭环。</span></h2>
+          <p>校园拼车的关键并不只是“把帖子发出去”，而是让信息可筛选、报名有状态、发布者可处理申请、双方能继续联系。这个 MVP 先用本地数据层把整套交互闭环做完整，再验证页面与规则是否成立。</p>
           <p>使用 OpenAI Codex 协作时，我持续检查页面入口、数据模型和状态文案，避免出现只做视觉、没有真实流程的空壳。项目在完成度上已达到可预览演示，但尚未把本地车单池升级为真实多人共享的云端服务。</p>
-          <div class="tech-line">
-            <span class="tag">微信小程序原生框架</span><span class="tag">WXML / WXSS / JS</span><span class="tag">自定义 TabBar</span><span class="tag">本地 Storage</span><span class="tag">云函数模板</span><span class="tag">中英文与双主题</span><span class="tag">OpenAI Codex</span>
+          <div class="tech-stack">
+            <span>微信小程序原生框架</span><span>WXML</span><span>WXSS</span><span>JavaScript</span><span>自定义 TabBar</span><span>本地 Storage</span><span>云函数模板</span><span>中英文与双主题</span><span>OpenAI Codex</span>
           </div>
         </div>
-        <aside class="limits reveal" aria-label="项目真实边界">
-          <div class="limits-head">真实边界 / 当前是单设备 MVP</div>
+
+        <aside class="boundary-panel songpin-boundary" id="boundary" data-reveal="panel" aria-label="松拼 SongRide 真实边界">
+          <div class="boundary-head"><span>BOUNDARY REPORT</span><span class="boundary-state">LOCAL / MVP</span></div>
+          <h2>真实边界，<br><span>当前是单设备 MVP。</span></h2>
           <ul>
-            <li><b>多人可见性</b>核心车单数据保存在单设备微信 Storage，未实现真实多人云端车单池、实时同步或即时通讯。</li>
-            <li><b>订阅提醒</b>存在客户端授权代码和云函数模板，但要真正下发微信订阅消息，仍需完成云开发、模板申请与配置验证。</li>
-            <li><b>品牌一致性</b>项目物料使用“松拼 SongRide”，而小程序导航标题仍出现过“松行小助手”，发布前需要统一。</li>
-            <li><b>运营数据</b>没有真实用户量、成交、收益、留存、获奖或上线运营结果；压测材料仅代表模拟 100 条车单的逻辑测试。</li>
+            <li><span>01</span><div><b>多人可见性</b><p>核心车单数据保存在单设备微信 Storage，未实现真实多人云端车单池、实时同步或即时通讯。</p></div></li>
+            <li><span>02</span><div><b>订阅提醒</b><p>存在客户端授权代码和云函数模板，但要真正下发微信订阅消息，仍需完成云开发、模板申请与配置验证。</p></div></li>
+            <li><span>03</span><div><b>品牌一致性</b><p>项目物料使用“松拼 SongRide”，而小程序导航标题仍出现过“松行小助手”，发布前需要统一。</p></div></li>
+            <li><span>04</span><div><b>运营数据</b><p>没有真实用户量、成交、收益、留存、获奖或上线运营结果；压测材料仅代表模拟 100 条车单的逻辑测试。</p></div></li>
+            <li><span>05</span><div><b>体验码状态</b><p>微信开发者工具登录二维码已超时，当前未取得新的有效预览码，因此不展示可能失效的体验二维码。</p></div></li>
           </ul>
         </aside>
       </div>
     </section>
 
-    <section class="end-cta">
-      <div class="container reveal">
+    <section class="closing-section songpin-closing">
+      <div class="section-shell closing-grid" data-reveal="mask">
         <div>
-          <h2>用微信扫码，<br>看一遍完整流程。</h2>
-          <p>小程序体验需要在微信中打开。你也可以先查看公开源码、README 和运行说明，了解页面结构与本地数据边界。</p>
+          <div class="section-code">NEXT ACTION / SOURCE FIRST</div>
+          <h2>体验码待更新，<br><span>源码可以先看。</span></h2>
+          <p>小程序体验需要在微信中打开。当前未取得新的有效预览码，你可以先查看公开源码、README 和运行说明，了解页面结构、双角色流程与本地数据边界。</p>
         </div>
-        <div class="actions">
-          <button class="btn" type="button" data-dialog-open="songpinExperience">扫码体验</button>
-          <a class="btn btn-ghost" href="https://github.com/99509340-svg/songpin-miniprogram" target="_blank" rel="noreferrer">查看源码</a>
+        <div class="closing-actions">
+          <button class="btn btn-primary magnet" type="button" data-dialog-open="songpinExperience">查看体验说明 <span aria-hidden="true">↗</span></button>
+          <a class="btn btn-outline magnet" href="https://github.com/99509340-svg/songpin-miniprogram" target="_blank" rel="noreferrer">查看源码 <span aria-hidden="true">↗</span></a>
         </div>
       </div>
     </section>
@@ -209,24 +262,30 @@
   <dialog id="songpinExperience" aria-labelledby="experienceTitle">
     <div class="dialog-inner">
       <div class="dialog-head">
-        <h2 id="experienceTitle">微信扫码体验</h2>
-        <button class="dialog-close" type="button" data-dialog-close aria-label="关闭">×</button>
+        <div>
+          <span class="dialog-code">MOBILE EXPERIENCE / PENDING</span>
+          <h2 id="experienceTitle">微信体验码待更新</h2>
+        </div>
+        <button class="dialog-close" type="button" data-dialog-close aria-label="关闭体验说明">×</button>
       </div>
-      <p class="dialog-body">松拼 SongRide 是微信小程序。请使用微信扫描体验码；当前项目为个人 MVP，部分数据保存在本地。</p>
+      <p class="dialog-body">松拼 SongRide 是微信小程序 MVP。当前项目为个人演示版，部分数据保存在本地。微信开发者工具预览码已超时，因此不提供可能已经失效的旧二维码。</p>
       <div class="qr-slot">
-        <div><strong>体验码待更新</strong>作品集公开发布前，将替换为最新的微信开发者工具预览码。未取得新码前，不提供可能已失效的二维码。</div>
+        <span class="qr-corner qr-corner-a" aria-hidden="true"></span>
+        <span class="qr-corner qr-corner-b" aria-hidden="true"></span>
+        <strong>CODE / OFFLINE</strong>
+        <p>取得新的有效预览码后，此区域会替换为真实小程序码。当前请先查看公开源码与运行说明。</p>
       </div>
       <div class="dialog-actions actions">
-        <a class="btn" href="https://github.com/99509340-svg/songpin-miniprogram" target="_blank" rel="noreferrer">先查看源码</a>
-        <button class="btn btn-ghost" type="button" data-dialog-close>关闭</button>
+        <a class="btn btn-primary" href="https://github.com/99509340-svg/songpin-miniprogram" target="_blank" rel="noreferrer">先查看源码 <span aria-hidden="true">↗</span></a>
+        <button class="btn btn-outline" type="button" data-dialog-close>关闭</button>
       </div>
     </div>
   </dialog>
 
   <footer class="site-footer">
-    <div class="container footer-row">
+    <div class="section-shell footer-row">
       <p>松拼 SongRide / 校园拼车微信小程序 MVP。界面示意根据源码字段重绘；项目内容不包含虚构用户量、收益或运营成绩。</p>
-      <nav class="footer-nav"><a href="index.html">返回作品集</a><a href="pocket-licai.html">上一个项目</a></nav>
+      <nav class="footer-nav"><a href="index.html">返回作品集</a><a href="pocket-licai.html">← 上一个项目</a></nav>
     </div>
   </footer>
 

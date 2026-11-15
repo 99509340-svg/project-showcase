@@ -3,99 +3,274 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="财务管理本科生个人项目作品集：口袋理财个人财务 MVP 与松拼 SongRide 校园拼车微信小程序。">
+  <meta name="theme-color" content="#060915">
+  <meta name="description" content="财务管理本科生个人项目作品集：口袋理财个人财务 Web/PWA MVP 与松拼 SongRide 校园拼车微信小程序。">
   <title>个人项目作品集｜财务背景 × 产品实践 × AI 协作开发</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="个人项目作品集｜财务背景 × 产品实践 × AI 协作开发">
+  <meta property="og:description" content="财务管理本科生双项目作品集：口袋理财 Web/PWA MVP 与松拼 SongRide 校园拼车小程序。">
+  <meta property="og:url" content="https://99509340-svg.github.io/project-showcase/">
+  <meta property="og:image" content="https://99509340-svg.github.io/project-showcase/assets/images/social/portfolio-og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="个人项目作品集｜财务背景 × 产品实践 × AI 协作开发">
+  <meta name="twitter:description" content="财务管理本科生双项目作品集：口袋理财 Web/PWA MVP 与松拼 SongRide 校园拼车小程序。">
   <link rel="stylesheet" href="assets/css/site.css">
+  <script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
-  <header class="site-header">
-    <div class="container site-nav">
-      <a class="wordmark" href="index.html" aria-label="返回项目作品集首页">项目作品集 <span>2026 / TWO CASE FILES</span></a>
+  <div class="intro-curtain" aria-hidden="true">
+    <div class="intro-band intro-band-cyan"></div>
+    <div class="intro-band intro-band-yellow"></div>
+    <div class="intro-band intro-band-red"></div>
+    <div class="intro-core">
+      <span>PORTFOLIO // 2026</span>
+      <strong>CASE<br>FILES</strong>
+      <small>TWO PROJECTS · VERIFIED BUILD</small>
+    </div>
+    <div class="intro-scan"></div>
+  </div>
+
+  <header class="site-header" data-header>
+    <div class="nav-shell">
+      <a class="brand" href="index.html" aria-label="返回项目作品集首页">
+        <span class="brand-mark">PF</span>
+        <span class="brand-copy"><strong>PROJECT DOSSIER</strong><small>FINANCE × PRODUCT × BUILD</small></span>
+      </a>
       <nav class="nav-links" aria-label="主导航">
-        <a href="pocket-licai.html">口袋理财</a>
-        <a href="songpin.html">松拼 SongRide</a>
-        <a href="#approach">工作方式</a>
-        <span class="nav-note">财务管理 · 上海对外经贸大学</span>
+        <a href="#projects">项目档案</a>
+        <a href="#method">工作方式</a>
+        <a href="#proof">真实性</a>
+        <a class="nav-source" href="https://github.com/99509340-svg" target="_blank" rel="noreferrer">GITHUB <span aria-hidden="true">↗</span></a>
       </nav>
-      <div class="scroll-progress" aria-hidden="true"></div>
+      <div class="progress-track" aria-hidden="true"><span class="scroll-progress"></span></div>
     </div>
   </header>
 
   <main>
-    <section class="home-hero container">
-      <div class="hero-copy reveal">
-        <h1>把真实需求，做成<em>能用的产品。</em></h1>
-        <p>我是财务管理专业本科生。两个项目都从场景定义开始，借助 OpenAI Codex 完成数据规则、界面交互、实现与验收，并明确保留每一处真实边界。</p>
+    <section class="home-hero">
+      <div class="home-hero-copy">
+        <h1 class="hero-title">
+          <span class="title-line"><span>把真实需求</span></span>
+          <span class="title-line title-accent"><span>做成能用产品</span><i aria-hidden="true">.</i></span>
+        </h1>
+        <p class="hero-lede">我是财务管理专业本科生。两个项目都从具体场景出发，由我负责需求定义、财务口径、流程与验收，并使用 OpenAI Codex 辅助完成界面实现和持续迭代。</p>
         <div class="actions hero-actions">
-          <a class="btn" href="#projects">查看两个项目
+          <a class="btn btn-primary magnet" href="#projects">
+            <span>进入项目档案</span>
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h14M14 7l5 5-5 5"/></svg>
           </a>
-          <a class="btn btn-ghost" href="https://github.com/99509340-svg" target="_blank" rel="noreferrer">GitHub 主页
+          <a class="btn btn-outline magnet" href="https://github.com/99509340-svg" target="_blank" rel="noreferrer">
+            <span>查看 GitHub</span>
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 13v5a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h5"/></svg>
           </a>
         </div>
-        <div class="hero-footnote">金融场景理解 × 产品流程设计 × 可验证的 MVP 交付</div>
+        <div class="hero-evidence">
+          <span><b>01</b> 财务分析</span>
+          <span><b>02</b> 产品流程</span>
+          <span><b>03</b> MVP 交付</span>
+        </div>
       </div>
 
-      <div class="project-index reveal" id="projects">
-        <a class="project-row pocket" href="pocket-licai.html">
-          <span class="project-number">01 / FINANCE</span>
-          <div class="project-copy">
-            <h2>口袋理财 · 收益管家</h2>
-            <p>个人财务 Web / PWA MVP：把收益计算、记账、资产、目标和 AA 结算连接成一个本地优先的数据闭环。</p>
-            <div class="project-tags"><span class="tag">7 个业务模块</span><span class="tag">财务计算</span><span class="tag">PWA</span></div>
-          </div>
-          <div class="project-thumb"><img src="assets/images/pocket/home-desktop.png" alt="口袋理财首页截图"></div>
-          <div class="arrow-disc" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M14 7l5 5-5 5"/></svg></div>
-        </a>
+      <aside class="hero-console" data-parallax>
+        <div class="console-topline">
+          <span>CASE CONTROL</span>
+          <span class="console-live"><i></i> VERIFIED</span>
+        </div>
+        <div class="console-number" aria-hidden="true">02</div>
+        <div class="console-list">
+          <a href="pocket-licai.html">
+            <span class="console-code">FIN / 01</span>
+            <strong>口袋理财</strong>
+            <small>7 模块 · Web/PWA · 可在线体验</small>
+            <i aria-hidden="true">↗</i>
+          </a>
+          <a href="songpin.html">
+            <span class="console-code">MOB / 02</span>
+            <strong>松拼 SongRide</strong>
+            <small>9 页面 · 双角色 · 微信小程序</small>
+            <i aria-hidden="true">↗</i>
+          </a>
+        </div>
+        <div class="console-bottom">
+          <span>LOCAL-FIRST BUILDS</span>
+          <span>2026 / SHANGHAI</span>
+        </div>
+        <div class="console-corner console-corner-a" aria-hidden="true"></div>
+        <div class="console-corner console-corner-b" aria-hidden="true"></div>
+      </aside>
+    </section>
 
-        <a class="project-row songpin" href="songpin.html">
-          <span class="project-number">02 / CAMPUS</span>
-          <div class="project-copy">
-            <h2>松拼 SongRide</h2>
-            <p>面向松江大学城的微信小程序 MVP：把找车、发布、报名、车主确认、收藏和个人管理串成完整流程。</p>
-            <div class="project-tags"><span class="tag">9 个页面</span><span class="tag">双角色</span><span class="tag">微信小程序</span></div>
+    <section class="case-arena" id="projects">
+      <div class="section-shell">
+        <div class="chapter-intro" data-reveal="mask">
+          <div class="chapter-slash" aria-hidden="true">01—02</div>
+          <h2>两个项目，<br><span>同一套交付逻辑。</span></h2>
+          <p>不做只有外壳的“概念稿”。从场景、数据规则到页面状态与验收，招聘方可以直接看到实现证据、运行入口和尚未完成的部分。</p>
+        </div>
+
+        <article class="case-panel case-pocket" data-case-panel>
+          <a class="case-visual" href="pocket-licai.html" aria-label="查看口袋理财项目档案">
+            <span class="case-stamp">CASE 01 / FINANCE</span>
+            <img src="assets/images/pocket/home-desktop.png" alt="口袋理财首页仪表盘，展示净资产、预算、收支与目标进度">
+            <span class="case-visual-scan" aria-hidden="true"></span>
+            <span class="case-visual-caption">DASHBOARD / DEMO DATA</span>
+          </a>
+          <div class="case-body">
+            <div class="case-heading">
+              <span class="case-kicker">WEB / PWA / MVP</span>
+              <h2><a href="pocket-licai.html">口袋理财<br><em>收益管家</em></a></h2>
+            </div>
+            <p>把理财收益、日常记账、资产负债、攒钱目标和 AA 结算连接成一个本地优先的个人财务数据闭环。</p>
+            <div class="case-facts">
+              <span><b>07</b> 业务模块</span>
+              <span><b>01</b> 本地数据模型</span>
+              <span><b>LIVE</b> 在线可体验</span>
+            </div>
+            <div class="case-tags">
+              <span>财务计算</span><span>localStorage</span><span>Canvas 2D</span><span>CSV / JSON</span>
+            </div>
+            <div class="case-actions">
+              <a class="btn btn-primary magnet" href="https://99509340-svg.github.io/pocket-licai/" target="_blank" rel="noreferrer">在线体验 <span aria-hidden="true">↗</span></a>
+              <a class="case-link" href="pocket-licai.html">查看项目详情 <span aria-hidden="true">→</span></a>
+            </div>
           </div>
-          <div class="project-thumb"><img src="assets/images/brand/songpin-logo.png" alt="松拼 SongRide 品牌标识"></div>
-          <div class="arrow-disc" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M14 7l5 5-5 5"/></svg></div>
-        </a>
+          <div class="case-index" aria-hidden="true">01</div>
+        </article>
+
+        <article class="case-panel case-songpin" data-case-panel>
+          <a class="case-visual case-visual-songpin" href="songpin.html" aria-label="查看松拼 SongRide 项目档案">
+            <span class="case-stamp">CASE 02 / CAMPUS</span>
+            <img src="assets/images/brand/songpin-logo.png" alt="松拼 SongRide 松饼品牌标识">
+            <span class="case-visual-scan" aria-hidden="true"></span>
+            <span class="case-visual-caption">MOBILE / WECHAT MINI PROGRAM</span>
+          </a>
+          <div class="case-body">
+            <div class="case-heading">
+              <span class="case-kicker">MOBILE / CAMPUS / MVP</span>
+              <h2><a href="songpin.html">松拼<br><em>SongRide</em></a></h2>
+            </div>
+            <p>面向松江大学城的校园拼车小程序：把找车、发布、报名、车主确认、收藏与个人管理串成完整状态流。</p>
+            <div class="case-facts">
+              <span><b>09</b> 页面</span>
+              <span><b>02</b> 用户角色</span>
+              <span><b>MVP</b> 可预览演示</span>
+            </div>
+            <div class="case-tags">
+              <span>微信原生框架</span><span>双角色</span><span>状态流转</span><span>本地 Storage</span>
+            </div>
+            <div class="case-actions">
+              <button class="btn btn-primary magnet" type="button" data-dialog-open="songpinExperience">体验说明 <span aria-hidden="true">↗</span></button>
+              <a class="case-link" href="songpin.html">查看项目详情 <span aria-hidden="true">→</span></a>
+            </div>
+          </div>
+          <div class="case-index" aria-hidden="true">02</div>
+        </article>
       </div>
     </section>
 
-    <section class="approach" id="approach">
-      <div class="container">
-        <div class="approach-head reveal">
-          <h2>先定义问题，<br>再让界面说话。</h2>
-          <p>这两个项目都不是从模板开始的。先找到具体使用场景，再把业务规则翻译成数据结构、页面状态和验收条件；OpenAI Codex 用于加速实现与迭代，但功能取舍、规则判断和最终验收仍由我负责。</p>
+    <section class="method-section" id="method">
+      <div class="section-shell">
+        <div class="method-head" data-reveal="mask">
+          <h2>先定义问题，<br><span>再让界面说话。</span></h2>
+          <p>OpenAI Codex 用来加速实现与迭代，但不负责替我决定产品方向。功能取舍、业务规则、信息层级和最终验收仍由我负责。</p>
         </div>
-        <div class="process-list reveal">
-          <div class="process-item"><span>01</span><h3>场景定义</h3><p>从真实问题出发：个人财务数据分散、校园拼车信息与合作状态缺少统一管理。</p></div>
-          <div class="process-item"><span>02</span><h3>规则建模</h3><p>把收益、预算、资产负债、报名状态、权限边界等业务规则先写成可验证的数据与交互。</p></div>
-          <div class="process-item"><span>03</span><h3>协作实现</h3><p>以 OpenAI Codex 辅助 Vibe Coding，持续拆解任务、检查产物并修正实现偏差。</p></div>
-          <div class="process-item"><span>04</span><h3>诚实交付</h3><p>记录运行方式、数据边界、测试状态和已知缺口，不把 MVP 包装成生产级产品。</p></div>
+        <div class="method-track" data-sequence>
+          <div class="method-line" aria-hidden="true"></div>
+          <div class="method-step">
+            <span class="method-node">01</span>
+            <h3>场景定义</h3>
+            <p>个人财务数据分散；校园拼车信息与合作状态缺少统一管理。</p>
+          </div>
+          <div class="method-step">
+            <span class="method-node">02</span>
+            <h3>规则建模</h3>
+            <p>把收益、预算、资产负债、报名状态和权限边界变成可验证的数据与交互。</p>
+          </div>
+          <div class="method-step">
+            <span class="method-node">03</span>
+            <h3>协作实现</h3>
+            <p>使用 Codex 完成页面、样式与逻辑迭代，持续检查产物并修正实现偏差。</p>
+          </div>
+          <div class="method-step">
+            <span class="method-node">04</span>
+            <h3>诚实交付</h3>
+            <p>记录运行方式、数据边界、测试状态和已知缺口，不把 MVP 包装成生产级产品。</p>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="truth-band">
-      <div class="container truth-inner reveal">
-        <h2>只展示<br>有源码证据的事。</h2>
+    <section class="truth-section" id="proof">
+      <div class="section-shell truth-grid">
+        <div class="truth-mark" data-reveal="mark">
+          <span>NO</span>
+          <span>FAKE</span>
+          <span>METRICS</span>
+        </div>
+        <div class="truth-copy" data-reveal="copy">
+          <h2>只展示有源码证据的事。</h2>
+          <p>你能看到功能、页面、数据存储方式、技术栈、运行方法和真实完成度。这里没有虚构用户量、收益、留存、获奖或运营成果。</p>
+          <div class="truth-columns">
+            <div>
+              <h3>可以核验</h3>
+              <ul><li>公开源码仓库</li><li>在线体验与运行说明</li><li>真实页面截图与数据结构</li><li>已知边界和待改进项</li></ul>
+            </div>
+            <div>
+              <h3>明确不说</h3>
+              <ul><li>不虚构真实用户与流量</li><li>不包装商业收益</li><li>不把 MVP 说成生产系统</li><li>不把界面示意当成真实截图</li></ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="closing-section">
+      <div class="section-shell closing-grid" data-reveal="mask">
         <div>
-          <p>你能看到功能、页面、数据存储方式、技术栈、运行方法和真实完成度。这里<strong>没有用户量、收益、获奖或运营成果的虚构数字</strong>。</p>
-          <p>两个项目均为个人 MVP：一个已具备在线网页体验，一个可通过微信小程序预览。它们证明的是产品意识与落地能力，不是商业运营结果。</p>
+          <h2>先看实现，<br><span>再判断潜力。</span></h2>
+          <p>如果你在寻找财务分析、金融科技、产品运营或互联网方向的实习生，这两个项目展示的是我如何把问题拆开、把规则做实，并把结果交付到可操作状态。</p>
+        </div>
+        <div class="closing-actions">
+          <a class="btn btn-primary magnet" href="pocket-licai.html">从口袋理财开始 <span aria-hidden="true">→</span></a>
+          <a class="btn btn-outline magnet" href="songpin.html">查看松拼 SongRide <span aria-hidden="true">→</span></a>
         </div>
       </div>
     </section>
   </main>
 
+  <dialog id="songpinExperience" aria-labelledby="experienceTitle">
+    <div class="dialog-inner">
+      <div class="dialog-head">
+        <div>
+          <span class="dialog-code">MOBILE EXPERIENCE / PENDING</span>
+          <h2 id="experienceTitle">松拼体验码待更新</h2>
+        </div>
+        <button class="dialog-close" type="button" data-dialog-close aria-label="关闭体验说明">×</button>
+      </div>
+      <p class="dialog-body">松拼 SongRide 是微信小程序 MVP。微信开发者工具预览码已超时，当前未取得可用的新二维码，因此不提供可能失效的旧码。</p>
+      <div class="qr-slot">
+        <span class="qr-corner qr-corner-a" aria-hidden="true"></span>
+        <span class="qr-corner qr-corner-b" aria-hidden="true"></span>
+        <strong>CODE / OFFLINE</strong>
+        <p>先查看公开源码与运行说明；取得新预览码后，此区域会替换为真实小程序码。</p>
+      </div>
+      <div class="dialog-actions actions">
+        <a class="btn btn-primary" href="https://github.com/99509340-svg/songpin-miniprogram" target="_blank" rel="noreferrer">查看源码 <span aria-hidden="true">↗</span></a>
+        <button class="btn btn-outline" type="button" data-dialog-close>关闭</button>
+      </div>
+    </div>
+  </dialog>
+
   <footer class="site-footer">
-    <div class="container footer-row">
+    <div class="section-shell footer-row">
       <p>个人项目作品集 · 面向财务分析、金融科技、产品运营与互联网实习。项目使用 OpenAI Codex 辅助开发，页面信息以当前公开源码和产物为依据。</p>
       <nav class="footer-nav" aria-label="页脚导航">
         <a href="pocket-licai.html">口袋理财</a>
         <a href="songpin.html">松拼 SongRide</a>
-        <a href="https://github.com/99509340-svg" target="_blank" rel="noreferrer">GitHub</a>
+        <a href="https://github.com/99509340-svg" target="_blank" rel="noreferrer">GitHub ↗</a>
       </nav>
     </div>
   </footer>
